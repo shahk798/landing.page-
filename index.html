@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumonex Agency | Automate Your Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar fade-in">
+    <div class="nav-content">
+      <div class="logo">
+        <img src="images/logo.png" alt="Lumonex Logo">
+        <h1 class="agency-name">Lumonex Agency</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#why">Why Lumonex</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero fade-up">
+    <div class="hero-text">
+      <h1>Automate Your Dental Clinic with Lumonex</h1>
+      <p>From WhatsApp Chatbots to Smart CRM — streamline your clinic's workflow and never miss a patient again.</p>
+      <div class="hero-buttons">
+        <a href="#plans" class="btn-primary">Get Started</a>
+        <a href="#demo" class="btn-secondary">Watch Demo</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.png" alt="Clinic Automation">
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section id="demo" class="demo fade-up">
+    <h2>🎬 Watch How Lumonex Automates Your Clinic</h2>
+    <div class="demo-video">
+      <img src="images/demo.png" alt="Demo Thumbnail">
+    </div>
+  </section>
+
+  <!-- Why Choose Lumonex -->
+  <section id="why" class="why fade-up">
+    <h2>Why Choose Lumonex?</h2>
+    <div class="why-cards">
+      <div class="why-card"> 
+        <h3>🤖 Smart Automation</h3>
+        <p>Reduce staff workload with intelligent WhatsApp and website chatbot automation.</p>
+      </div>
+      <div class="why-card">
+        <h3>📊 Powerful CRM</h3>
+        <p>Track leads, patients, payments, and analytics in one easy dashboard.</p>
+      </div>
+      <div class="why-card">
+        <h3>⚙️ Zero Setup Hassle</h3>
+        <p>We configure everything — your clinic is ready to use within days.</p>
+      </div>
+      <div class="why-card">
+        <h3>💬 Ongoing Support</h3>
+        <p>Get quick help and training whenever needed — we’re always here for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans" class="plans fade-up">
+    <h2>Our Plans</h2>
+    <div class="plans-container">
+      
+      <!-- Starter Plan -->
+      <div class="plan-card starter">
+        <div class="badge popular">⭐ Most Popular</div>
+        <h3>Starter Plan</h3>
+        <p class="price">₹5999 / month</p>
+        <table>
+          <tr><th>Feature</th><th>Details</th><th>Clinic's Benefit</th></tr>
+          <tr><td>WhatsApp Chatbot Setup</td><td>Basic chatbot for FAQs, appointment requests, and lead capture</td><td>Automates patient inquiries and saves staff time</td></tr>
+          <tr><td>Database + Dashboard</td><td>Notion CRM to track leads, appointments, projects, and payments</td><td>Keeps all patient interactions and project info organized</td></tr>
+          <tr><td>Monthly Report</td><td>Summary of leads, appointments, and payments</td><td>Helps track progress and results monthly</td></tr>
+          <tr><td>Support</td><td>1 week of initial training and troubleshooting</td><td>Clients can start using system without confusion</td></tr>
+          <tr><td>Delivery Time</td><td>7–9 days</td><td>Quick setup for immediate use</td></tr>
+          <tr><td>Setup Fee</td><td>No setup fee</td><td>Covers initial configuration</td></tr>
+        </table>
+        <a href="#contact" class="btn-primary small">Start Now</a>
+      </div>
+
+      <!-- Scaler Plan -->
+      <div class="plan-card scaler">
+        <div class="badge coming">🚀 Coming Soon</div>
+        <h3>Scaler Plan</h3>
+        <p class="price">₹12,999 / month</p>
+        <table>
+          <tr><th>Feature</th><th>Details</th><th>Clinic's Benefit</th></tr>
+          <tr><td>WhatsApp + Website Chatbot</td><td>Includes basic AI call assistant</td><td>Handles inquiries from multiple channels</td></tr>
+          <tr><td>Automated Database Integration</td><td>All leads feed automatically into CRM</td><td>No manual entry, saves staff time</td></tr>
+          <tr><td>Advanced Dashboard / CRM</td><td>Visual dashboard with analytics, charts, KPIs</td><td>Tracks leads, appointments, and payments efficiently</td></tr>
+          <tr><td>Workflow Automation</td><td>Automated follow-ups and reminders</td><td>Improves patient communication</td></tr>
+          <tr><td>Analytics & Reporting</td><td>Detailed reports on leads, projects, and revenue</td><td>Data-driven decision making</td></tr>
+          <tr><td>Priority Support</td><td>Faster response and ongoing troubleshooting</td><td>Ensures smooth operations</td></tr>
+          <tr><td>Delivery Time</td><td>10–15 days</td><td>Full setup for maximum automation</td></tr>
+          <tr><td>Additional (Optional)</td><td>Landing page / website (2–3 pages) – ₹3500</td><td>Enhances clinic’s online presence</td></tr>
+        </table>
+        <a href="#contact" class="btn-secondary small">Coming Soon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+ <!-- Contact Section -->
+<section id="contact" class="contact fade-up">
+  <div class="contact-card">
+    <h2>Contact Us</h2>
+    <p>Interested in automating your clinic? Fill out the form below and we’ll reach out soon.</p>
+
+    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+      <div class="form-group">
+        <input type="text" name="doctor_name" placeholder="Doctor's Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="clinic_name" placeholder="Clinic Name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="clinic_address" placeholder="Clinic Address (Optional)">
+      </div>
+      <div class="form-group">
+        <input type="tel" name="clinic_number" placeholder="Clinic Contact Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit number">
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Message (Optional)"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Submit Details</button>
+    </form>
+
+    <!-- Success Message -->
+    <p id="successMessage" class="success-message">✅ Thank you! Your details have been received.</p>
+  </div>
+</section>
+
+<!-- Script for Success Message -->
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const formData = new FormData(contactForm);
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" }
+    });
+    if (response.ok) {
+      successMessage.style.display = "block";
+      contactForm.reset();
+      setTimeout(() => {
+        successMessage.style.display = "none";
+      }, 4000);
+    }
+  });
+</script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <p>📞 +91 88284 20118 | ✉️ shai.lumonex@gmail.com</p>
+    <p>© 2025 Lumonex Agency | <a href="#">Terms & Conditions</a></p>
+  </footer>
+</body>
+</html>
