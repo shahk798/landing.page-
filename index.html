@@ -18,8 +18,10 @@
       <nav>
         <ul>
           <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About us </a></li>
           <li><a href="#plans">Plans</a></li>
           <li><a href="#why">Why Lumonex</a></li>
+          <li><a href="#standout">How We Stand Out</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -33,7 +35,7 @@
       <p>From WhatsApp Chatbots to Smart CRM — streamline your clinic's workflow and never miss a patient again.</p>
       <div class="hero-buttons">
         <a href="#plans" class="btn-primary">Get Started</a>
-        <a href="#demo" class="btn-secondary">Watch Demo</a>
+        <a href="#demo" class="hero-btn">Watch Intro</a>
       </div>
     </div>
     <div class="hero-image">
@@ -42,10 +44,48 @@
   </section>
 
   <!-- Demo Section -->
-  <section id="demo" class="demo fade-up">
-    <h2>🎬 Watch How Lumonex Automates Your Clinic</h2>
-    <div class="demo-video">
-      <img src="images/demo.png" alt="Demo Thumbnail">
+<section id="demo" class="demo fade-up">
+  <h2>🎬 Watch How Lumonex Automates Your Clinic</h2>
+
+  <div class="intro-video" id="thumbnail">
+    <img src="images/demo.png" alt="Demo Thumbnail" style="cursor:pointer;">
+  </div>
+</section>
+
+<!-- Video Popup Modal -->
+<div id="videoModal" class="video-modal">
+  <div class="video-content">
+    <span class="close">&times;</span>
+
+    <video id="demoVideo" controls>
+      <source src="videos/intro.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+</div>
+
+
+<!-- About Us Section (NEW) -->
+  <section id="about" class="about fade-up">
+    <h2>About Us</h2>
+    <p>At Lumonex, we specialize in building smart automation tools for dental clinics. Our mission is to simplify clinic operations using modern technology, from automated WhatsApp chatbots to complete CRM dashboards.
+    <br><br>
+    We focus on reliability, ease of use, and real-world results that help clinics save time and increase patient satisfaction.</p>
+
+    <div class="about-features">
+      <div class="about-card">
+        <h3>💡 Vision</h3>
+        <p>To become the leading automation platform for clinics across India.</p>
+      </div>
+      <div class="about-card">
+        <h3>🎯 Mission</h3>
+        <p>Empowering clinics with automation that boosts efficiency and patient care.</p>
+      </div>
+      <div class="about-card">
+        <h3>🤝 Values</h3>
+        <p>Transparency, innovation, and long‑term support for every partner clinic.</p>
+      </div>
     </div>
   </section>
 
@@ -72,6 +112,82 @@
     </div>
   </section>
 
+<section id="standout" class="standout fade-up">
+  <h2>How We Stand Out From Others</h2>
+
+  <div class="comparison-wrapper">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th class="lumonex-col">Lumonex</th>
+          <th>Other Agency</th>
+          <th>Other Companies</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Setup</td>
+          <td class="lumonex-col">3–5 days + full onboarding & staff training</td>
+          <td>7–9 days, limited support</td>
+          <td>6–9 days, self-setup</td>
+        </tr>
+
+        <tr>
+          <td>Automation Level</td>
+          <td class="lumonex-col">Complete system: WhatsApp booking, reminders & CRM</td>
+          <td>Basic features only</td>
+          <td>Appointments + billing automation</td>
+        </tr>
+
+        <tr>
+          <td>CRM System</td>
+          <td class="lumonex-col">Advanced CRM with real-time tracking & reports</td>
+          <td>Basic clinic panel</td>
+          <td>No CRM</td>
+        </tr>
+
+        <tr>
+          <td>Data Privacy</td>
+          <td class="lumonex-col">Secure HTTPS + MongoDB + Unique clinic ID</td>
+          <td>Cloud hosted</td>
+          <td>Low transparency</td>
+        </tr>
+
+        <tr>
+          <td>Monthly Report</td>
+          <td class="lumonex-col">Auto-generated analytics</td>
+          <td>Manual export</td>
+          <td>Limited</td>
+        </tr>
+
+        <tr>
+          <td>Support</td>
+          <td class="lumonex-col">Direct WhatsApp + Team monitoring</td>
+          <td>Ticket system</td>
+          <td>Email support</td>
+        </tr>
+
+        <tr>
+          <td>Hidden Charges</td>
+          <td class="lumonex-col">None</td>
+          <td>Extra for setup</td>
+          <td>Extra per message</td>
+        </tr>
+
+        <tr>
+          <td>Pricing</td>
+          <td class="lumonex-col"><b>₹5999 / month</b></td>
+          <td>₹7499 / month</td>
+          <td>₹6999 / month</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
   <!-- Plans Section -->
   <section id="plans" class="plans fade-up">
     <h2>Our Plans</h2>
@@ -85,10 +201,10 @@
         <table>
           <tr><th>Feature</th><th>Details</th><th>Clinic's Benefit</th></tr>
           <tr><td>WhatsApp Chatbot Setup</td><td>Basic chatbot for FAQs, appointment requests, and lead capture</td><td>Automates patient inquiries and saves staff time</td></tr>
-          <tr><td>Database + Dashboard</td><td>Notion CRM to track leads, appointments, projects, and payments</td><td>Keeps all patient interactions and project info organized</td></tr>
-          <tr><td>Monthly Report</td><td>Summary of leads, appointments, and payments</td><td>Helps track progress and results monthly</td></tr>
-          <tr><td>Support</td><td>1 week of initial training and troubleshooting</td><td>Clients can start using system without confusion</td></tr>
-          <tr><td>Delivery Time</td><td>7–9 days</td><td>Quick setup for immediate use</td></tr>
+          <tr><td>Database + Dashboard</td><td> CRM to track Patients, appointments and payments</td><td>Keeps all patient interactions and project info organized</td></tr>
+          <tr><td>Monthly Report</td><td>Summary of Patient appointments, and payments</td><td>Helps track progress and results monthly</td></tr>
+          <tr><td>Support</td><td>1 week of initial training and troubleshooting</td><td>Clinics can start using system without confusion</td></tr>
+          <tr><td>Delivery Time</td><td>3–5 days</td><td>Quick setup and immediate use</td></tr>
           <tr><td>Setup Fee</td><td>No setup fee</td><td>Covers initial configuration</td></tr>
         </table>
         <a href="#contact" class="btn-primary small">Start Now</a>
@@ -102,13 +218,13 @@
         <table>
           <tr><th>Feature</th><th>Details</th><th>Clinic's Benefit</th></tr>
           <tr><td>WhatsApp + Website Chatbot</td><td>Includes basic AI call assistant</td><td>Handles inquiries from multiple channels</td></tr>
-          <tr><td>Automated Database Integration</td><td>All leads feed automatically into CRM</td><td>No manual entry, saves staff time</td></tr>
-          <tr><td>Advanced Dashboard / CRM</td><td>Visual dashboard with analytics, charts, KPIs</td><td>Tracks leads, appointments, and payments efficiently</td></tr>
+          <tr><td>Automated Database Integration</td><td>All Patients feed automatically into CRM</td><td>No manual entry, saves staff time</td></tr>
+          <tr><td>Advanced Dashboard / CRM</td><td>Visual dashboard with analytics and charts</td><td>Tracks patients, appointments, and payments efficiently</td></tr>
            <tr><td>Google Business Review Setup</td><td>Automate and manage patient reviews on Google</td><td>Boosts online reputation and patient trust</td></tr>
           <tr><td>Workflow Automation</td><td>Automated follow-ups and reminders</td><td>Improves patient communication</td></tr>
-          <tr><td>Analytics & Reporting</td><td>Detailed reports on leads, projects, and revenue</td><td>Data-driven decision making</td></tr>
+          <tr><td>Analytics & Reporting</td><td>Detailed reports on All appointment,and revenue</td><td>Data-driven decision making</td></tr>
           <tr><td>Priority Support</td><td>Faster response and ongoing troubleshooting</td><td>Ensures smooth operations</td></tr>
-          <tr><td>Delivery Time</td><td>10–15 days</td><td>Full setup for maximum automation</td></tr>
+          <tr><td>Delivery Time</td><td>4–7 days</td><td>Full setup for maximum automation</td></tr>
           <tr><td>Additional (Optional)</td><td>Landing page / website (2–3 pages) – ₹3500</td><td>Enhances clinic’s online presence</td></tr>
         </table>
         <a href="#contact" class="btn-secondary small">Coming Soon</a>
@@ -178,5 +294,31 @@
     <p>📞 +91 88284 20118 | ✉️ shai.lumonex@gmail.com</p>
     <p>© 2025 Lumonex Agency | <a href="#">Terms & Conditions</a></p>
   </footer>
+  <script>
+  const thumbnail = document.getElementById("thumbnail");
+  const videoModal = document.getElementById("videoModal");
+  const closeBtn = document.querySelector(".close");
+  const demoVideo = document.getElementById("demoVideo");
+
+  thumbnail.onclick = function () {
+    videoModal.style.display = "block";
+    demoVideo.play();
+  }
+
+  closeBtn.onclick = function () {
+    videoModal.style.display = "none";
+    demoVideo.pause();
+    demoVideo.currentTime = 0;
+  }
+
+  window.onclick = function (event) {
+    if (event.target == videoModal) {
+      videoModal.style.display = "none";
+      demoVideo.pause();
+      demoVideo.currentTime = 0;
+    }
+  }
+</script>
+
 </body>
 </html>
