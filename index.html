@@ -16,7 +16,7 @@
         <h1 class="agency-name">Lumonex Agency</h1>
       </div>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About us </a></li>
           <li><a href="#plans">Plans</a></li>
@@ -24,6 +24,7 @@
           <li><a href="#standout">How We Stand Out</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger">☰</div>
       </nav>
     </div>
   </header>
@@ -299,6 +300,8 @@
   const videoModal = document.getElementById("videoModal");
   const closeBtn = document.querySelector(".close");
   const demoVideo = document.getElementById("demoVideo");
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
 
   thumbnail.onclick = function () {
     videoModal.style.display = "block";
@@ -317,6 +320,11 @@
       demoVideo.pause();
       demoVideo.currentTime = 0;
     }
+  }
+
+  // Mobile menu toggle
+  hamburger.onclick = function () {
+    navLinks.classList.toggle("show");
   }
 </script>
 
